@@ -4,7 +4,6 @@ echo "pre process...." >&1
 mkdir -p /data/plugins
 CONFIGFILE=/data/server.properties
 
-cp /resources/bin/php7/lib/* /usr/lib/
 #env
 if [ -z "${WORLDTYPE}" ]; then
 	WORLDTYPE="flat"
