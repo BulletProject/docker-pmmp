@@ -23,8 +23,8 @@ if [ -z "${SRVDOMAIN}" ]; then
 	SRVDOMAIN="0.0.0.0"
 fi
 
-if [ -z "${OPNAME}" ]; then
-	echo ${OPNAME} > /data/ops.txt
+if [ ! -z "${OPNAME}" ]; then
+      echo ${OPNAME} > /data/ops.txt
 fi
 
 #config
