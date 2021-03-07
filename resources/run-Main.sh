@@ -16,7 +16,7 @@ bash /resources/echoStorage.sh
 #############
 ls /resources/
 
-if [ -e /resources/initialstart ]; then 
+if [ ! -e /data/server.properties ]; then 
 	echo "Initial Start..." >&1
 
 	#-----------------#
@@ -25,7 +25,6 @@ if [ -e /resources/initialstart ]; then
 
 	echo "Preparation pmmp has been selected." >&1
 	sh /resources/pre-BE-PMMP.sh
-	rm -rf /resources/initialstart
 	echo "Initial Start...done" >&1
 fi
 
