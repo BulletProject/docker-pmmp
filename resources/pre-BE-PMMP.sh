@@ -24,6 +24,10 @@ if [ -z "${SRVDOMAIN}" ]; then
 	SRVDOMAIN="0.0.0.0"
 fi
 
+if [ -z "${OPNAME}" ]; then
+	echo ${OPNAME} > /data/ops.txt
+fi
+
 #config
 echo "motd=${SRVID} [MiRm-PMMP]" > ${CONFIGFILE}
 echo "server-port=19132" >> ${CONFIGFILE}
@@ -33,7 +37,5 @@ echo "server-ip=${SRVDOMAIN}" >> ${CONFIGFILE}
 echo "language=jpn" >> ${CONFIGFILE}
 echo "xbox-auth=false" >> ${CONFIGFILE}
 
-#OP
-echo ${MCSOP} > /data/ops.txt
 
 echo "pre process....done" >&1
