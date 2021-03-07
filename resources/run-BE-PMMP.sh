@@ -20,21 +20,10 @@ if [ -e ${PHARFILE} ]; then
 	else
 		echo "Phar must be broken." >&2
 		exit 1
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	fi
-elif [ -e ${PHARFILE}  ]; then
-	echo "Phar founded!" >&1
 else
 	echo "Phar not found." >&2
+	PHARFILE=/resources/pmmp.phar
 	ls /data/
 	exit 1
 fi
