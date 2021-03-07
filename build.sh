@@ -12,5 +12,6 @@ rm -rf bin
 tar zxvf PHP*.tar.gz
 rm -f  PHP*.tar.gz
 
+cd ../
 docker build . -t mirm/docker-pmmp
 docker push mirm/docker-pmmp:latest
