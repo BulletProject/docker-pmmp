@@ -25,7 +25,6 @@ else
 	echo "Phar not found." >&2
 	PHARFILE=/resources/pmmp.phar
 	ls /data/
-	exit 1
 fi
 
 rm -rf /data/resource_packs
