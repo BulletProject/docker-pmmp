@@ -12,6 +12,7 @@ RUN apt update
 
 #curl for libcurl4 for bds
 RUN apt install zip rsync unzip expect perl curl -y
+RUN apt clean
 
 #Make necessary dirs
 RUN mkdir -p  ${DATAPATH} /resources/
