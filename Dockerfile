@@ -17,7 +17,7 @@ RUN apt install zip rsync unzip expect perl curl -y
 RUN mkdir -p  ${DATAPATH} /resources/
 
 ##Initial flag
-RUN touch /minecraft/initialstart
+RUN touch /data/initialstart
 
 #Copy
 COPY ./resources/*  /resources/
